@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sasha Vining</title>
+    <link href="./css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/ikj7rzh.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Maven+Pro&display=swap" rel="stylesheet">
+
+</head>
+    {% include 'partials/_header.html' %}
+<body class="min-h-screen flex-col">
+    {{ content | safe }}
+</body>
+    {% include 'partials/_footer.html' %}
+</html>
