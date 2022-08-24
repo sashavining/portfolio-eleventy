@@ -910,6 +910,17 @@ button {
     display:none;
   }
 }
+
+@media (max-width: 500px) {
+  .xsm\:center {
+    text-align: center;
+  }
+  .xsm\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 @media (min-width: 1100px) {
   .ml\:pl-32{
     padding-left: 11rem;
