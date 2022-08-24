@@ -1,16 +1,16 @@
-{% macro work(imgPath, imgAlt, imgLink, heading, para, tools, liveLink, githubLink) %}
+{% macro work(imgPath, imgAlt, heading, para, tools, liveLink, githubLink) %}
 <article>
 <div class="p-6 bg-dark-tan border border-gray-100 rounded-lg text-center">
    <div class="w-12 h-1.5"></div>
-   <a href="{{ imgLink }}">
+   <a href="{{ liveLink }}"> 
    <img src="{{ imgPath }}" alt=" {{ imgAlt }}" class="cropped img-low-opacity-hover">
+   </a>
    <h3 class="font-semibold text-xl mt-5">{{ heading }}</h3>
    <p class="mt-4">
       {{ para }}
     
    </p>
      <p class='mt-5'><span class="font-bold">tools used:</span> {{ tools }}</p> 
-   </a>
     {% if githubLink !== '' %}
    <div class="grid grid-cols-2 mt-6">
    {% endif %}

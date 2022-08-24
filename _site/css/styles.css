@@ -678,6 +678,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 1.5rem;
 }
 
+.p-3 {
+  padding: .75rem;
+}
+
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -772,7 +776,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .font-bold {
-  font-weight: 700;
+  font-weight: 900;
 }
 
 .font-semibold {
@@ -858,7 +862,7 @@ textarea{
 }
 
 button {
-  height:40px;
+  height:50px;
 }
 
 .focus-maroon:focus {
@@ -911,7 +915,7 @@ button {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .xsm\:center {
     text-align: center;
   }
