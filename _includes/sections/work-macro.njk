@@ -11,13 +11,20 @@
    </p>
      <p class='mt-5'><span class="font-bold">tools used:</span> {{ tools }}</p> 
    </a>
+    {% if githubLink !== '' %}
    <div class="grid grid-cols-2 mt-6">
+   {% endif %}
+    {% if githubLink == '' %}
+       <div class="grid grid-cols-1 mt-6">
+    {% endif %}
    <a href="{{ liveLink }} ">
-    <img src="assets/link-solid.svg" width="50px" height="50px" style="margin:0 auto">
+    <img src="assets/link-solid.svg" alt="live site link" width="50px" height="50px" style="margin:0 auto">
     </a>
+    {% if githubLink !== '' %}
     <a href="{{ githubLink }} ">
-    <img src="assets/github-brands.svg" width="50px" height="50px" style="margin:0 auto">
+    <img src="assets/github-brands.svg" alt="github link" width="50px" height="50px" style="margin:0 auto">
     </a>
+    {% endif %}
     </div>
 </div>
 

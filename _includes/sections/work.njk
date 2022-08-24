@@ -1,19 +1,19 @@
-<section class="py-12 px-6 ml:pl-32">
-    <h2 class="text-maroon-600 font-accent text-4xl">Recent Work</h2>
-    <h3 class="mt-6 text-xl mx-5">Full-Stack Development</h3>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mt-12 md:px-4">
+<section>
+    <h2 class="text-maroon-600 font-accent text-4xl text-center" id="recent-work">Recent Work</h2>
+    <h3 class="mt-6 text-xl mb-6 text-center">Full-Stack Development</h3>
+    <div class="grid justify-evenly items-center grid-cols-1 md:grid-cols-2 gap-12 mt-12 px-24">
         {% import 'sections/work-macro.njk' as macro %}
 
         {{ macro.work('assets/examen-apium-med.png', 'screenshot of Examen Apium, a Latin translation of the NYTimes Spelling Bee', 'https://www.examenapium.com', 'Examen Apium', 'A Latin language word game, modeled after the NYTimes Spelling Bee. 500 users and climbing. Built on a Latin word database with 320,000+ entries, scraped and maintained by me. ', 'MongoDB, Express, Node.js, JavaScript, HTML, CSS', 'https://www.examenapium.com', 'https://github.com/sashavining/examen-apium') }}
-        {{ macro.work('assets/foliary.png', 'screenshot of Foliary, a full-stack plant care application', 'https://www.foliary.herokuapp.com', 'Foliary', 'Full-stack houseplant care app. Users can search for plants by care needs; be recommended similar plants to ones they already own; create a user profile and track plant care.', 'MongoDB, Express, Node.js, JavaScript, HTML, CSS', 'https://www.foliary.herokuapp.com', 'https://github.com/sashavining/foliary') }}
+        {{ macro.work('assets/foliary.png', 'screenshot of Foliary, a full-stack plant care application', 'https://www.foliary.herokuapp.com', 'Foliary', 'Full-stack houseplant care app. Users can search for plants by care needs; be recommended similar plants to ones they already own; create a user profile and track plant care.', 'MongoDB, Express, Node.js, JavaScript, Passport.js HTML, CSS', 'https://www.foliary.herokuapp.com', 'https://github.com/sashavining/foliary') }}
 
       </div>
-    <h3 class="mt-6 text-xl mx-5">Web Design / WordPress</h3>
+    <h3 class="mt-6 text-xl mb-6 text-center">WordPress / Web Design</h3>
     
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mt-12 md:px-4">
-        {{ macro.work('assets/foliary.png', 'screenshot of Foliary, a full-stack plant care application', 'https://www.foliary.herokuapp.com', 'Foliary', 'Full-stack houseplant care app. Users can search for plants by care needs; be recommended similar plants to ones they already own; create a user profile and track plant care.', 'MongoDB, Express, Node.js, JavaScript, HTML, CSS', 'https://www.foliary.herokuapp.com', 'https://github.com/sashavining/foliary') }}
-        {{ macro.work('assets/foliary.png', 'screenshot of Foliary, a full-stack plant care application', 'https://www.foliary.herokuapp.com', 'Foliary', 'Full-stack houseplant care app. Users can search for plants by care needs; be recommended similar plants to ones they already own; create a user profile and track plant care.', 'MongoDB, Express, Node.js, JavaScript, HTML, CSS', 'https://www.foliary.herokuapp.com', 'https://github.com/sashavining/foliary') }}
-        {{ macro.work('assets/foliary.png', 'screenshot of Foliary, a full-stack plant care application', 'https://www.foliary.herokuapp.com', 'Foliary', 'Full-stack houseplant care app. Users can search for plants by care needs; be recommended similar plants to ones they already own; create a user profile and track plant care.', 'MongoDB, Express, Node.js, JavaScript, HTML, CSS', 'https://www.foliary.herokuapp.com', 'https://github.com/sashavining/foliary') }}
+    <div class="grid justify-evenly items-center grid-cols-1 md:grid-cols-3 gap-12 mt-12 px-24">
+        {{ macro.work('assets/consulting_color.png', 'screenshot of Consulting Color layout', 'https://consultingcolor.org', 'Consulting Color', 'WordPress website built for a Virginia-based nonprofit, Consulting Color.', 'WordPress, CSS', 'https://consultingcolor.org/contact/', '') }}
+        {{ macro.work('assets/keane_sense_of_rhythm.png', 'screenshot of Keane Sense of Rhythm website', 'https://tapcompany.org', 'Keane Sense of Rhythm', 'Wordpress site redesign for a Minnesota-based tap studio and nonprofit.', 'Wordpress, CSS', 'https://tapcompany.org', '') }}
+        {{ macro.work('assets/goodness_people.png', 'screenshot of Goodness People website', 'https://goodnesspeople.org', 'Goodness People', 'WordPress site build for a New York-based nonprofit, Goodness People.', 'WordPress, CSS', 'https://goodnesspeople.org', '') }}
 
     </div>
 </section>
