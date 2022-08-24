@@ -576,6 +576,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 3rem;
 }
 
+.w-half {
+  width: 50%;
+}
+
 .max-w-6xl {
   max-width: 75rem;
 }
@@ -649,6 +653,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: #E8E3BF;
 }
 
+.bg-maroon {
+  background-color: rgb(154 24 39);
+}
+.hover-bg-dark-maroon:hover{
+  background-color: rgb(122, 12, 25);
+  fill: rgb(122, 12, 25);
+}
 .border-gray-100 {
   --tw-border-opacity: 1;
   border-color: rgb(243 244 246 / var(--tw-border-opacity));
@@ -659,47 +670,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-cyan-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(34 211 238 / var(--tw-bg-opacity));
-}
-
-.bg-cyan-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(103 232 249 / var(--tw-bg-opacity));
-}
-
-.bg-pink-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(249 168 212 / var(--tw-bg-opacity));
-}
-
-.bg-purple-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(216 180 254 / var(--tw-bg-opacity));
-}
-
-.bg-purple-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(250 245 255 / var(--tw-bg-opacity));
-}
-
-.bg-gradient-to-br {
-  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
-}
-
-.from-cyan-400 {
-  --tw-gradient-from: #22d3ee;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(34 211 238 / 0));
-}
-
-.from-cyan-500 {
-  --tw-gradient-from: #06b6d4;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(6 182 212 / 0));
-}
-
-.to-purple-500 {
-  --tw-gradient-to: #a855f7;
+.img-low-opacity-hover:hover {
+  opacity: .5;
 }
 
 .p-6 {
@@ -841,6 +813,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
+.text-tan-600{
+  --tw-text-opacity: 1;
+  color: #F6F3DB;
+
+}
+
 .text-purple-700 {
   --tw-text-opacity: 1;
   color: rgb(126 34 206 / var(--tw-text-opacity));
@@ -869,6 +847,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+/* Form styles */
+
+input[type=text] {
+  height: 40px;
+}
+
+textarea{
+  height:150px;
+}
+
+button {
+  height:40px;
+}
+
+.focus-maroon:focus {
+  outline: none;
+  border: rgb(154 24 39) 2px solid;
+}
 @media (min-width: 768px) {
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
